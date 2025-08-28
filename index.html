@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Conhecimento Sura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="logo">SURA</div>
+                    <div class="badge">Central de Conhecimento</div>
+                </div>
+                <div class="header-right">
+                    <i class="fas fa-search"></i>
+                    <button class="help-btn">
+                        <i class="fas fa-question-circle"></i>
+                        Ajuda
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-content">
+                    <h2>Áreas de Conhecimento</h2>
+                    <div class="areas-list">
+                        <button class="area-btn active" data-area="operacoes">
+                            <i class="fas fa-cog"></i>
+                            <div class="area-info">
+                                <div class="area-title">Operações</div>
+                                <div class="area-desc">Processos operacionais e gestão</div>
+                            </div>
+                        </button>
+                        <button class="area-btn" data-area="sinistros">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div class="area-info">
+                                <div class="area-title">Sinistros</div>
+                                <div class="area-desc">Gestão e regulação de sinistros</div>
+                            </div>
+                        </button>
+                        <button class="area-btn" data-area="emissoes">
+                            <i class="fas fa-file-text"></i>
+                            <div class="area-info">
+                                <div class="area-title">Emissões</div>
+                                <div class="area-desc">Processo de emissão de apólices</div>
+                            </div>
+                        </button>
+                        <button class="area-btn" data-area="negocios">
+                            <i class="fas fa-bullseye"></i>
+                            <div class="area-info">
+                                <div class="area-title">Negócios</div>
+                                <div class="area-desc">Estratégia e desenvolvimento comercial</div>
+                            </div>
+                        </button>
+                        <button class="area-btn" data-area="transporte">
+                            <i class="fas fa-truck"></i>
+                            <div class="area-info">
+                                <div class="area-title">Transporte</div>
+                                <div class="area-desc">Seguros para frotas e cargas</div>
+                            </div>
+                        </button>
+                        <button class="area-btn" data-area="automovel">
+                            <i class="fas fa-car"></i>
+                            <div class="area-info">
+                                <div class="area-title">Automóvel</div>
+                                <div class="area-desc">Seguros automotivos</div>
+                            </div>
+                        </button>
+                        <button class="area-btn" data-area="residencial">
+                            <i class="fas fa-home"></i>
+                            <div class="area-info">
+                                <div class="area-title">Residencial</div>
+                                <div class="area-desc">Seguros para residências</div>
+                            </div>
+                        </button>
+                        <button class="area-btn" data-area="financeiro">
+                            <i class="fas fa-calculator"></i>
+                            <div class="area-info">
+                                <div class="area-title">Financeiro</div>
+                                <div class="area-desc">Gestão financeira e contábil</div>
+                            </div>
+                        </button>
+                        <button class="area-btn" data-area="tesouraria">
+                            <i class="fas fa-piggy-bank"></i>
+                            <div class="area-info">
+                                <div class="area-title">Tesouraria</div>
+                                <div class="area-desc">Gestão de caixa e investimentos</div>
+                            </div>
+                        </button>
+                        <button class="area-btn" data-area="tecnologia">
+                            <i class="fas fa-desktop"></i>
+                            <div class="area-info">
+                                <div class="area-title">Tecnologia</div>
+                                <div class="area-desc">Sistemas e infraestrutura de TI</div>
+                            </div>
+                        </button>
+                        <button class="area-btn" data-area="talento-humano">
+                            <i class="fas fa-users"></i>
+                            <div class="area-info">
+                                <div class="area-title">Talento Humano</div>
+                                <div class="area-desc">Gestão de pessoas e RH</div>
+                            </div>
+                        </button>
+                        <button class="area-btn" data-area="sox">
+                            <i class="fas fa-building"></i>
+                            <div class="area-info">
+                                <div class="area-title">SOX</div>
+                                <div class="area-desc">Controles Sarbanes-Oxley</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="content">
+                <!-- Area Header -->
+                <div class="area-header">
+                    <div class="area-header-info">
+                        <div class="area-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div class="area-details">
+                            <h1 class="area-name">Operações</h1>
+                            <p class="area-description">Processos operacionais e gestão</p>
+                        </div>
+                    </div>
+
+                    <!-- Tabs -->
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="onboarding">
+                            <i class="fas fa-user-check"></i>
+                            Onboarding
+                        </button>
+                        <button class="tab-btn" data-tab="informacoes">
+                            <i class="fas fa-info-circle"></i>
+                            Informações
+                        </button>
+                        <button class="tab-btn" data-tab="glossario">
+                            <i class="fas fa-book-open"></i>
+                            Glossário
+                        </button>
+                        <button class="tab-btn" data-tab="contatos">
+                            <i class="fas fa-users"></i>
+                            Quem Procurar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Content Area -->
+                <div class="content-area">
+                    <!-- Onboarding Tab -->
+                    <div class="tab-content active" id="onboarding">
+                        <div class="onboarding-content">
+                            <div class="welcome-section">
+                                <h3>Bem-vindo à Operações</h3>
+                                <p>A área de Operações é responsável pela execução e monitoramento de todos os processos operacionais da Sura.</p>
+                            </div>
+                            
+                            <div class="onboarding-grid">
+                                <div class="onboarding-card">
+                                    <div class="card-header">
+                                        <i class="fas fa-book-open"></i>
+                                        <h4>Primeira Semana</h4>
+                                    </div>
+                                    <div class="card-content">
+                                        <ul class="checklist">
+                                            <li><span class="number">1</span>Conhecer a estrutura organizacional da área</li>
+                                            <li><span class="number">2</span>Entender os principais processos operacionais</li>
+                                            <li><span class="number">3</span>Acessar sistemas e ferramentas de trabalho</li>
+                                            <li><span class="number">4</span>Participar de reuniões de alinhamento</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="onboarding-card">
+                                    <div class="card-header">
+                                        <i class="fas fa-bullseye"></i>
+                                        <h4>Processos-Chave</h4>
+                                    </div>
+                                    <div class="card-content">
+                                        <ul class="process-list">
+                                            <li><i class="fas fa-bolt"></i>Gestão de processos internos</li>
+                                            <li><i class="fas fa-bolt"></i>Controle de qualidade</li>
+                                            <li><i class="fas fa-bolt"></i>Monitoramento de SLAs</li>
+                                            <li><i class="fas fa-bolt"></i>Melhoria contínua</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="manager-card">
+                                <div class="manager-header">
+                                    <i class="fas fa-user"></i>
+                                    <h4>Seu Gestor</h4>
+                                </div>
+                                <div class="manager-info">
+                                    <p class="manager-name">Ricardo Oliveira - Gerente de Operações</p>
+                                    <p class="manager-note">Entre em contato para agendar uma conversa de boas-vindas!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Informações Tab -->
+                    <div class="tab-content" id="informacoes">
+                        <div class="info-content">
+                            <div class="info-header">
+                                <h3>Informações da Área</h3>
+                                <p>Explore os tópicos abaixo para conhecer os processos e responsabilidades</p>
+                            </div>
+                            
+                            <div class="info-grid">
+                                <div class="topics-panel">
+                                    <div class="topic-item">
+                                        <button class="topic-btn" data-topic="processos">
+                                            <div class="topic-header">
+                                                <i class="fas fa-cogs"></i>
+                                                <span>Processos Internos</span>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </button>
+                                        <div class="subtopics" id="processos-subtopics">
+                                            <button class="subtopic-btn" data-subtopic="mapeamento">
+                                                <div class="subtopic-title">Mapeamento de Processos</div>
+                                                <div class="subtopic-desc">Documentação e análise de processos</div>
+                                            </button>
+                                            <button class="subtopic-btn" data-subtopic="qualidade">
+                                                <div class="subtopic-title">Controle de Qualidade</div>
+                                                <div class="subtopic-desc">Monitoramento da qualidade</div>
+                                            </button>
+                                            <button class="subtopic-btn" data-subtopic="sla">
+                                                <div class="subtopic-title">Gestão de SLA</div>
+                                                <div class="subtopic-desc">Controle de prazos operacionais</div>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="topic-item">
+                                        <button class="topic-btn" data-topic="melhoria">
+                                            <div class="topic-header">
+                                                <i class="fas fa-chart-line"></i>
+                                                <span>Melhoria Contínua</span>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </button>
+                                        <div class="subtopics" id="melhoria-subtopics">
+                                            <button class="subtopic-btn" data-subtopic="projetos">
+                                                <div class="subtopic-title">Projetos de Melhoria</div>
+                                                <div class="subtopic-desc">Iniciativas de otimização</div>
+                                            </button>
+                                            <button class="subtopic-btn" data-subtopic="indicadores">
+                                                <div class="subtopic-title">Indicadores de Performance</div>
+                                                <div class="subtopic-desc">KPIs e métricas</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="details-panel">
+                                    <div class="placeholder-content">
+                                        <i class="fas fa-info-circle"></i>
+                                        <h3>Selecione um tópico</h3>
+                                        <p>Clique em um dos tópicos à esquerda para ver informações detalhadas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Glossário Tab -->
+                    <div class="tab-content" id="glossario">
+                        <div class="glossary-content">
+                            <div class="glossary-header">
+                                <h3>Glossário Técnico</h3>
+                                <p>Principais termos e definições da área de Operações</p>
+                            </div>
+                            
+                            <div class="glossary-grid">
+                                <div class="glossary-card">
+                                    <div class="term-header">SLA</div>
+                                    <div class="term-definition">Service Level Agreement - Acordo de Nível de Serviço que define prazos e qualidade esperados.</div>
+                                </div>
+                                <div class="glossary-card">
+                                    <div class="term-header">KPI</div>
+                                    <div class="term-definition">Key Performance Indicator - Indicador-chave de Performance para medir resultados.</div>
+                                </div>
+                                <div class="glossary-card">
+                                    <div class="term-header">Processo</div>
+                                    <div class="term-definition">Sequência de atividades organizadas para atingir um objetivo específico.</div>
+                                </div>
+                                <div class="glossary-card">
+                                    <div class="term-header">Melhoria Contínua</div>
+                                    <div class="term-definition">Filosofia de aprimoramento constante de processos e resultados.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contatos Tab -->
+                    <div class="tab-content" id="contatos">
+                        <div class="contacts-content">
+                            <div class="contacts-header">
+                                <h3>Quem Procurar</h3>
+                                <p>Contatos organizados por especialidade na área de Operações</p>
+                            </div>
+                            
+                            <div class="contacts-grid">
+                                <div class="contact-section">
+                                    <div class="section-header">
+                                        <i class="fas fa-cogs"></i>
+                                        <h4>Processos Internos</h4>
+                                    </div>
+                                    <div class="contact-list">
+                                        <div class="contact-item">
+                                            <div class="contact-info">
+                                                <div class="contact-title">Mapeamento de Processos</div>
+                                                <div class="contact-desc">Documentação e análise de processos</div>
+                                            </div>
+                                            <div class="contact-person">Marina Santos - Analista de Processos</div>
+                                        </div>
+                                        <div class="contact-item">
+                                            <div class="contact-info">
+                                                <div class="contact-title">Controle de Qualidade</div>
+                                                <div class="contact-desc">Monitoramento da qualidade</div>
+                                            </div>
+                                            <div class="contact-person">Carlos Ferreira - Coordenador de Qualidade</div>
+                                        </div>
+                                        <div class="contact-item">
+                                            <div class="contact-info">
+                                                <div class="contact-title">Gestão de SLA</div>
+                                                <div class="contact-desc">Controle de prazos operacionais</div>
+                                            </div>
+                                            <div class="contact-person">Ana Lima - Supervisora de SLA</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact-section">
+                                    <div class="section-header">
+                                        <i class="fas fa-chart-line"></i>
+                                        <h4>Melhoria Contínua</h4>
+                                    </div>
+                                    <div class="contact-list">
+                                        <div class="contact-item">
+                                            <div class="contact-info">
+                                                <div class="contact-title">Projetos de Melhoria</div>
+                                                <div class="contact-desc">Iniciativas de otimização</div>
+                                            </div>
+                                            <div class="contact-person">Pedro Costa - Analista de Projetos</div>
+                                        </div>
+                                        <div class="contact-item">
+                                            <div class="contact-info">
+                                                <div class="contact-title">Indicadores de Performance</div>
+                                                <div class="contact-desc">KPIs e métricas</div>
+                                            </div>
+                                            <div class="contact-person">Lucia Rocha - Analista de Indicadores</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
