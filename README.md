@@ -81,4 +81,5 @@ Testado nos principais navegadores modernos (Chrome, Firefox, Safari, Edge). A a
 
 ## Observações
 
-Este é um projeto interno focado em simplicidade e facilidade de manutenção. O código foi mantido direto e sem frameworks complexos para facilitar alterações neste esboço.
+Este é um projeto interno focado em simplicidade e facilidade de manutenção. O código foi mantido direto e sem frameworks complexos para facilitar a apresentação, mas também foi feito uma versão em React + Tailwind CSS.
+
